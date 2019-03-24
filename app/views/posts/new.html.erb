@@ -2,12 +2,15 @@
 <hr>
 <%= form_for @post do |f| %>
   <p>名前</p>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, :class => "form-control my-form" %>
+  <br>
   <p>内容</p>
-  <%= f.text_area :content %>
+  <%= f.text_area :content, :class => "form-control my-form" %>
+  <br>
   <p>場所</p>
-  <%= f.text_field :place %>
+  <%= f.text_field :place, :class => "form-control my-form" %>
   <hr>
-  <%= f.submit "登録する" %>
+  <%= f.submit "登録する", :class => "btn btn-primary" %>
 <% end %>
-<a href="/posts">トップに戻る</a>
+<hr>
+<a href="/posts" class="btn btn-info">トップに戻る</a>
