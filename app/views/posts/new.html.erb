@@ -1,9 +1,7 @@
 <h1>投稿を作る</h1>
 <hr>
 <%= form_for @post do |f| %>
-  <p>名前</p>
-  <%= f.text_field :name, :class => "form-control my-form" %>
-  <br>
+  
   <p>内容</p>
   <%= f.text_area :content, :class => "form-control my-form" %>
   <br>
